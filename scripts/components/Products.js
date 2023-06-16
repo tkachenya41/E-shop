@@ -1,5 +1,5 @@
 import { BASE_URL } from "../api.js";
-import { ui } from "./UI.js";
+import { ui } from "./Ui.js";
 
 class Products {
   async getProducts() {

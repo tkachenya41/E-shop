@@ -5,7 +5,11 @@ export function getBasketCount() {
   for (let i = 0; i < localStorage.length; i++) {
     let id = localStorage.key(i);
     let prodObj = JSON.parse(localStorage.getItem(id));
-    totalSumOfProducts += +prodObj.count;
+    console.log(prodObj);
+    if (prodObj && typeof prodObj.count === "number") {
+      totalSumOfProducts += prodObj.count;
+    }
+    console.log(totalSumOfProducts);
   }
-  basketContent.textContent = totalSumOfProducts;
+  basketContent.innerHTML = totalSumOfProducts;
 }

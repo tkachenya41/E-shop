@@ -5,8 +5,8 @@ class CardUI {
   createCardUI(product) {
     productsDOM.innerHTML = "";
     productsDOM.innerHTML = `<div class='product-card' id = ${product.id}>
-    <a href = '/' class='return' >
-    <img src='../img/left-arrow.svg'>
+    <a href = '/E-shop/' class='return' >
+    <img src='img/left-arrow.svg'>
     </a>
     <h3 class='product-title'>${product.title}</h3>
     <p class='product-description'>${product.description}</p>
